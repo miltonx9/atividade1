@@ -68,3 +68,8 @@ Route::get('/nome/{a1}/{a2}', function ($a1,$a2) {
 	}else{echo "diferente";}
 		
 });
+
+Route::get('/x/{a1n}/{a2n}', function ($a1n,$a2n) {
+    return view('wel', ['nome' => $a1n,'nome1' => $a2n]);
+});
+
